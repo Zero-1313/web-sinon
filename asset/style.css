@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+  }
+ 
+ /* untuk BG / Cover Web */
+ html {
+     background: url(foto/bg12.jpg)no-repeat center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+ }
+
+ /* Untuk Judul */
+ .jumbotron {
+     font-size: 20px;
+     padding: 15px;
+     background-color: gray;
+     text-align: center;
+     color: whitesmoke;
+ }
+
+ /* untuk jarak leyout / jenis font text */
+ Body {
+     margin: 0px;
+     font-family: "Quicksand", sans-serif;
+     padding: 0px;
+ }
+
+ /* Untuk memberi warna pada judul h1,h2,h3,h4 */
+ h1 {
+     text-align: center;
+     color: rgb(255, 255, 255);
+ }
+
+ h3 {
+     margin: 15px;
+     color: rgb(58, 77, 85);
+ }
+
+ h4 {
+     margin: 25px;
+     color: rgb(58, 77, 85);
+ }
+
+ /* Untuk Navigasi Jgn di ubah */
+
+ nav {
+     background-color: black;
+     padding: 5px;
+     position: sticky;
+     top: 0;
+ }
+
+ .navbar ul {
+     list-style-type: none;
+     background-color: rgb(102, 100, 100);
+     padding: 0px;
+     margin: 0px;
+     overflow: hidden;
+ }
+
+ .navbar a {
+     color: white;
+     text-decoration: none;
+     padding: 15px;
+     display: block;
+     text-align: center;
+ }
+
+ .navbar a:hover {
+     background-color: black;
+     font-weight: bold;
+ }
+
+ .navbar li {
+     float: left;
+     display: inline;
+ }
+/*untuk konten foto wisata jgn di ubah */
+ .container {
+     display: flex;
+     width: max-content;
+     gap: 1rem;
+     align-items: center;
+ }
+
+ .horizontal-scroll {
+     width: 100%;
+     overflow-x: scroll;
+ }
+
+ .horizontal-scroll::-webkit-scrollbar {
+     display: none;
+ }
+
+ .item {
+     width: 100%;
+     aspect-ratio: 10/10;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .item figcaption {
+     position: absolute;
+     bottom: 0%;
+     background-color: rgba(255, 255, 255, 0.76);
+     padding: 0rem 0;
+     width: 100%;
+     text-align: center;
+ }
+
+ .item:hover figcaption {
+     bottom: 0%;
+ }
+
+ /* Untuk Foter Bagian akhir Konten */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+ .profile header {
+     text-align: center;
+ }
+
+ .profile img {
+     width: 200px;
+ }
+
+ .featured-image {
+     width: 100%;
+     max-height: 400px;
+     object-fit: cover;
+     object-position: center;
+ }
+
+ .card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2);
+     border-radius: 5px;
+     padding: 20px;
+     margin-top: 20px;
+ }
+
+ .gambar {
+     max-width: 250px;
+     margin-right: 200px;
+ }
+
+ .text {
+     max-width: 350px;
+ }
+
+ #content {
+     float: left;
+     width: 75%;
+ }
+
+ aside {
+     float: right;
+     width: 25%;
+     padding-left: 20px;
+ }
+
+ main {
+    padding: 20px;
+    overflow: auto;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  header {
+    display: inline;
+  }  
